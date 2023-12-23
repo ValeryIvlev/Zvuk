@@ -21,14 +21,14 @@ public class TestBase {
         Configuration.baseUrl = "";
         Configuration.browserSize = System.getProperty("size", "1920x1080");
         //Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 30000;
-        Configuration.browserVersion = System.getProperty("version", "98");
+        Configuration.timeout = 20000;
+        //Configuration.browserVersion = System.getProperty("version", "98");
         Configuration.headless = false;
         Configuration.webdriverLogsEnabled = true;
         Configuration.browser = System.getProperty("browser", "firefox");
 
-        Configuration.remote
-                = System.getProperty("selenoid", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        //Configuration.remote
+        //        = System.getProperty("selenoid", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
