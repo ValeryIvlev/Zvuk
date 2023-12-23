@@ -23,7 +23,7 @@ public class MainPage {
     private final SelenideElement authorizationButton = $(byText("Войти"));
     @Step("Открываем главную страницу")
     public MainPage openMainPage(){
-        open("");
+        open("https://zvuk.com");
         return this;
     }
     @Step("Клик в область поиска")
