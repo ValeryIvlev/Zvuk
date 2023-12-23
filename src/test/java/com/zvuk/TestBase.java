@@ -21,7 +21,7 @@ public class TestBase {
         Configuration.baseUrl = "";
         Configuration.browserSize = System.getProperty("size", "1920x1080");
         //Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 20000;
+        Configuration.timeout = 30000;
         Configuration.browserVersion = System.getProperty("version", "98");
         Configuration.headless = false;
         Configuration.webdriverLogsEnabled = true;
