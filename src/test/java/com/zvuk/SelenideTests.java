@@ -73,7 +73,7 @@ public class SelenideTests extends TestBase {
     @Test
     @Disabled
     @Tag("zvuk")
-    @DisplayName("Проверка регионов для авторизации в сервисе")
+    @DisplayName("Проверка стран для авторизации в сервисе")
     void checkRegionsAuthorization() {
         TestData testData = new TestData();
         mainPage.openMainPage()
