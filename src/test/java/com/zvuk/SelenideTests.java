@@ -9,8 +9,9 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-public class SelenideTests extends TestBase{
+public class SelenideTests extends TestBase {
     MainPage mainPage = new MainPage();
+
     @Test
     @Tag("zvuk")
     @DisplayName("Проверка поисовой выдачи при поиске по Артисту")
@@ -23,6 +24,7 @@ public class SelenideTests extends TestBase{
                 .hoverSearchInput()
                 .checkSearchElement(apiHelpers.getTitles());
     }
+
     @Test
     @Tag("zvuk")
     @DisplayName("Проверка количества поисовой выдачи при поиске по Артисту")
@@ -35,27 +37,30 @@ public class SelenideTests extends TestBase{
                 .hoverSearchInput()
                 .checkCountSearchResult(apiHelpers.getCountSearchResult());
     }
+
     @Test
     @Tag("zvuk")
     @DisplayName("Проверка отсутствия уведомлений")
-    void notificationsAbsence(){
+    void notificationsAbsence() {
         mainPage.openMainPage()
                 .clickOnNotifications()
                 .checkEmptyResult();
     }
+
     @Test
     @Tag("zvuk")
     @DisplayName("Проверка переключения цвета темы")
-    void checkColorSwitching(){
+    void checkColorSwitching() {
         mainPage.openMainPage()
                 .checkColorWindowIsDark()
                 .clickOnColorCheckbox()
                 .checkColorWindowIsLight();
     }
+
     @Test
     @Tag("zvuk")
     @DisplayName("Проверка регионов для авторизации в сервисе")
-    void checkRegionsAuthorization(){
+    void checkRegionsAuthorization() {
         TestData testData = new TestData();
         mainPage.openMainPage()
                 .clickOnAuthorizationButton()
