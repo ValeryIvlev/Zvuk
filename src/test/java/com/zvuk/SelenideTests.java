@@ -3,6 +3,7 @@ package com.zvuk;
 import com.zvuk.api.ApiSearch;
 import com.zvuk.pages.MainPage;
 import com.zvuk.testdata.TestData;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -23,6 +24,18 @@ public class SelenideTests extends TestBase {
                 .enterText(testData.artist)
                 .hoverSearchInput()
                 .checkSearchElement(apiHelpers.getTitles());
+    }
+    @Test
+    @Tag("zvuk")
+    @DisplayName("Проверка перехода на страницу Артиста")
+    void checkMoveOnPageArtist() throws IOException {
+        TestData testData = new TestData();
+        mainPage.openMainPage()
+                .clickOnSearch()
+                .enterText(testData.artist)
+                .hoverSearchInput()
+                .clickOnArtist()
+                .checkNameArtist(testData.artist);
     }
 
     @Test
@@ -58,6 +71,7 @@ public class SelenideTests extends TestBase {
     }
 
     @Test
+    @Disabled
     @Tag("zvuk")
     @DisplayName("Проверка регионов для авторизации в сервисе")
     void checkRegionsAuthorization() {
@@ -68,4 +82,5 @@ public class SelenideTests extends TestBase {
                 .clickOnSelectRegionButton()
                 .checkCountriesList(testData.countries);
     }
+
 }

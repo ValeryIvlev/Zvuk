@@ -1,7 +1,9 @@
 package com.zvuk.pages.component;
 
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import com.zvuk.pages.ArtistPage;
 import com.zvuk.pages.MainPage;
 import io.qameta.allure.Step;
 
@@ -43,5 +45,10 @@ public class SearchComponent {
             title.get(i).shouldHave(text(titles.get(i)));
         }
         return this;
+    }
+    @Step("Кликаем по Артисту в поиске")
+    public ArtistPage clickOnArtist(){
+        title.get(0).click();
+        return Selenide.page(ArtistPage.class);
     }
 }
