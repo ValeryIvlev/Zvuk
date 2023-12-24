@@ -54,6 +54,18 @@
 <img title="Telegram Alert" src="images/allertTelegram.png">
 </p>
 
+##  <img src="images/Allure_TestOps.svg" width="25" height="25"  alt="Allure_TestOps"/></a>Интеграция тестов c тест-менеджмент системой Allure TestOps
+
+<p align="center">
+<img title="Allure TestOps" src="images/allureTestOpss.png">
+</p>
+
+##  <img src="images/Jira.svg" width="25" height="25"  alt="Jira"/></a>Интеграция тестов c таск-трекер системой Jira
+
+<p align="center">
+<img title="Jira" src="images/jira_result.png">
+</p>
+
 ## <img src="images/selenoid.svg" width="25" height="25"  alt="selenoid"/></a> Видео с прохождением тестов
 
 <p align="center">

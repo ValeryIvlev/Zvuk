@@ -40,7 +40,7 @@ public class SelenideTests extends TestBase {
 
     @Test
     @Tag("zvuk")
-    @DisplayName("Проверка количества поисовой выдачи при поиске по Артисту")
+    @DisplayName("Проверка количества поисковой выдачи при поиске по Артисту")
     void checkSearchCount() throws IOException {
         TestData testData = new TestData();
         ApiSearch apiHelpers = new ApiSearch(testData.artist);
