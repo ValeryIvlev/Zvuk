@@ -2,7 +2,6 @@ package com.zvuk;
 
 import com.zvuk.api.ApiSearch;
 import com.zvuk.pages.MainPage;
-import com.zvuk.testdata.TestData;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;

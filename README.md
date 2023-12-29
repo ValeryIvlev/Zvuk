@@ -1,6 +1,6 @@
 <h2 align="center"> Проект по автоматизации тестирования компании ЗВУК </h2> 
 
-<a href="https://www.zvuk.com"><img alt="zvuk" height="150" src="images/Zvuk.svg" width="150"/></a>
+<a href="https://www.zvuk.com"><img alt="zvuk" height="150" src="images/zvuk.jpg" width="150"/></a>
 
 ## :classical_building: Технологический стек
 
@@ -26,15 +26,14 @@
 - :white_check_mark: Проверка переключения цвета темы
 - :white_check_mark: Проверка стран для авторизации в сервисе
 
-## <img src="images/jenkins.svg" width="25" height="25"  alt="jenkins"/></a> Jenkins job
+## <img src="images/jenkins.svg" width="25" height="25" alt="jenkins"/></a> Сборка в <a target="_blank" href="https://jenkins.autotests.cloud/job/qaguru_detective_hw17"> Jenkins </a>
 
-<a target="_blank" href="https://jenkins.autotests.cloud/job/qaguru_detective_hw17">Сборка в Jenkins</a>
 <p align="center">
 
-<a href="https://jenkins.autotests.cloud/job/16-javaordie-finalUI"><img src="images/buildJenkins.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/qaguru_detective_hw17"><img src="images/buildJenkins.png" alt="Jenkins"/></a>
 </p>
 
-## <img src="images/allure.svg" width="25" height="25"  alt="allure"/></a>*Отчет в Allure Report*
+## <img src="images/allure.svg" width="25" height="25"  alt="allure"/></a>Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/qaguru_detective_hw17/allure/"> Allure Report </a>
 
 ### Основное окно
 
@@ -54,13 +53,13 @@
 <img title="Telegram Alert" src="images/allertTelegram.png">
 </p>
 
-##  <img src="images/Allure_TestOps.svg" width="25" height="25"  alt="Allure_TestOps"/></a>Интеграция тестов c тест-менеджмент системой Allure TestOps
+##  <img src="images/Allure_TestOps.svg" width="25" height="25"  alt="Allure_TestOps"/></a>Интеграция тестов c тест-менеджмент системой  <a target="_blank" href="https://allure.autotests.cloud/project/3899/dashboards"> Allure TestOps </a>
 
 <p align="center">
 <img title="Allure TestOps" src="images/allureTestOpss.png">
 </p>
 
-##  <img src="images/Jira.svg" width="25" height="25"  alt="Jira"/></a>Интеграция тестов c таск-трекер системой Jira
+##  <img src="images/Jira.svg" width="25" height="25"  alt="Jira"/></a>Интеграция тестов c таск-трекер системой <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1015"> Jira </a>
 
 <p align="center">
 <img title="Jira" src="images/jira_result.png">

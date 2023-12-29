@@ -18,9 +18,7 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
 
-        Configuration.baseUrl = "";
         Configuration.browserSize = System.getProperty("size", "1920x1080");
-        //Configuration.pageLoadStrategy = "eager";
         Configuration.timeout = 20000;
         Configuration.browserVersion = System.getProperty("version", "118");
         Configuration.headless = false;
@@ -43,7 +41,6 @@ public class TestBase {
     void setUp() {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
-        //Attach.browserConsoleLogs();
         Attach.addVideo();
 
         clearBrowserCookies();
